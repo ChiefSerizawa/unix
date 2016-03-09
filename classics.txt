@@ -1,0 +1,5 @@
+# Ex1: Rename every file to remove .ext extension in the same directory
+for file in *.ext; do mv -i $file `basename $file .ext`; done
+# The -i option warns the user against overwriting an existing file
+
+
